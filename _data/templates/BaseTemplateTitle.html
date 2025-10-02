@@ -1,0 +1,45 @@
+id: 5
+source: 1
+templatename: BaseTemplateTitle
+properties: 'a:0:{}'
+
+-----
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    [[$head]]
+    <title>SUMtv Latino | Secrets Unsealed</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    [[$header]]
+    <main>
+        <div class="pattern-square"></div>
+        <!--Pageheader start-->
+        <section class="py-5 py-lg-8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <div class="text-center">
+                            <h1 class="mb-3">[[*longtitle:default=`[[*pagetitle]]`]]</h1>
+                            <!-- <p class="mb-0">Blog Single Column We write stuff from time to time that might be interesting 🤷‍‍</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Pageheader end-->
+         [[!RenderSections? &json=`[[*sectionsJson]]`]]
+         [[*content]]
+       
+    </main>
+
+    [[$footer]]
+    [[$scripts]]
+</body>
+
+
+</html>

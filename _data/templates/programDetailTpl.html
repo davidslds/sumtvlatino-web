@@ -1,0 +1,29 @@
+id: 6
+source: 1
+templatename: programDetailTpl
+properties: 'a:0:{}'
+
+-----
+
+<!doctype html>
+<html lang="en">
+
+<head>
+   [[$head]]
+   <title>SUMtv Latino | Secrets Unsealed</title>
+</head>
+
+<body>
+   <!-- Navbar -->
+   [[$header]]
+   <main>
+      [[!getProgramDetails? &count=`5` &tpl=`hero-1`]]
+   
+   </main>
+
+ [[$footer]]
+ [[$scripts]]
+</body>
+
+
+</html>

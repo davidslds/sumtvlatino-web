@@ -1,0 +1,62 @@
+id: 58
+source: 1
+name: study-note-detail
+description: ''
+properties: 'a:0:{}'
+
+-----
+
+<section id="hero" class="pt-9 right-slant-shape-2 pt-5 mb-5" 
+    style="background-color:[[+bgColor]];">
+    <div class="container">
+       <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-md-5 col-12 order-2 order-md-1">
+             <div class="text-center text-lg-start mb-7 mb-lg-0" >
+                <div class="mb-4">
+                   <h1 id="hero-text"  class=" display-5" style="color: [[+heroText]];">
+                      [[+title]]
+                   </h1>
+                </div>
+                <div class="hero-subtext" style="color: [[+heroSubtext]];">
+                  
+                   [[+pdfFile:notempty=`
+                    <a href="[[+pdfFile]]" id="pdf-download-button" target="_blank" data-resource="[[*pagetitle]]" class="btn btn-primary me-2">Abrir PDF</a>
+                    `]]
+                    [[+pdfFile2:notempty=`
+                    <a href="[[+pdfFile2]]" id="pdf-download-button2" target="_blank" data-resource="[[*pagetitle]]" class="btn btn-primary me-2">Abrir PDF Vol 2</a>
+                    `]]
+                     [[+epubFile:notempty=`
+                    <a target="_blank" href="https://sumtv.app/study-notes/[[+idStrapi]]"  target="_blank"  class="btn btn-primary me-2">Leer Online</a>
+                    `]]
+                     [[+storeLink:notempty=`
+                     <a href="[[+storeLink]]" target="_blank" class="btn btn-primary me-2">Comprar</a>
+                    `]]
+                   
+                </div>
+             </div>
+          </div>
+          <div class=" col-md-5 col-12  mt-3 mt-md-3 order-1 order-md-2">
+             <div class="position-relative z-1 pt-lg-9" >
+                <div class="position-relative d-flex justify-content-center pb-3 pb-md-0">
+                   <img id="myImage"    src="[[+poster]]" class="rounded-4 " style="width: 100%; max-width: 437px;"/>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <section class="container">
+   [[+description:notempty =  `
+ <section class="container"> 
+   <div class="row pt-7">
+               <div class="mb-xl-7 mb-5">
+                  <h2 class="h2 mb-3">Acerca de este manual de estudio</h2>
+                  [[Markdown? &input=`[[+description]]`]]
+                  
+               </div>
+            </div>
+ </section>
+
+`]]
+ </section>
+ 

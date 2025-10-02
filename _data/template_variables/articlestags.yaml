@@ -1,0 +1,12 @@
+id: 1
+type: hidden
+name: articlestags
+caption: articlestags
+description: 'The default tags TV for Articles. Do not delete!'
+category: Articles
+elements: null
+default_text: null
+properties: null
+input_properties: null
+output_properties: null
+content: null

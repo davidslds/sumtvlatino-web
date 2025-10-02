@@ -1,0 +1,68 @@
+id: 23
+source: 1
+name: feature2
+description: ''
+properties: 'a:0:{}'
+
+-----
+
+  <!--Feature 2-->
+  [[+variant:eq=`image-right`:then=`
+   <section class="">
+            <div class="container pb-lg-5">
+               <div class="row align-items-center">   
+                  <div class="col-lg-5 offset-lg-1 col-md-6 col-12 order-lg-2">
+                     <div class="mt-md-5">
+                        <small class="text-primary text-uppercase ls-md fw-semibold">[[+subheading]]</small>
+                        <div class="mb-5 mt-4">
+                           <h2 class="mb-3">[[+heading]]</h2>
+                           <div class="lead mb-0">
+                               [[Markdown? &input=`[[+bodyContent]]`]]
+                           </div>
+                        </div>
+                        [[+buttons]]
+                     </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-12 order-lg-2 order-1">
+                     <div class="position-relative rellax mb-7 mb-lg-0" data-rellax-percentage="1" data-rellax-speed="0.8"
+                        data-disable-parallax-down="md">
+                        <figure>
+                           <img src="[[+picture]]" alt="[[+heading]]" class="img-fluid rounded-4" />
+                        </figure>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+  
+  `]]
+  [[+variant:eq=`image-left`:then=`
+      <section class="">
+            <div class="container pb-lg-5">
+               <div class="row align-items-center">
+                  <div class="col-lg-6 col-md-6 col-12 order-lg-2 order-1">
+                     <div class="position-relative rellax mb-7 mb-lg-0" data-rellax-percentage="1" data-rellax-speed="0.8" data-disable-parallax-down="md">
+                        <figure>
+                           <img src="[[+picture]]" alt="[[+heading]]" class="img-fluid rounded-4" />
+                        </figure>
+                     </div>
+                  </div>
+                  <div class="col-lg-5 offset-lg-1 col-md-6 col-12 order-lg-2">
+                     <div class="mt-md-5">
+                        <small class="text-primary text-uppercase ls-md fw-semibold">[[+subheading]]</small>
+                        <div class="mb-5 mt-4">
+                           <h2 class="mb-3">[[+heading]]</h2>
+                           <div class="lead mb-0">
+                               [[Markdown? &input=`[[+bodyContent]]`]]
+                           </div>
+                        </div>
+
+                        [[+buttons]]
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+  `]]
+        
+         <!--Feature 2 end-->

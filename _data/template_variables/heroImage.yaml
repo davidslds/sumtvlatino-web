@@ -1,0 +1,11 @@
+id: 8
+source: 1
+type: image
+name: heroImage
+elements: null
+display: default
+default_text: ''
+properties: 'a:0:{}'
+input_properties: 'a:1:{s:10:"allowBlank";s:4:"true";}'
+output_properties: 'a:0:{}'
+content: ''

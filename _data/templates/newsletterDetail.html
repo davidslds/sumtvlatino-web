@@ -1,0 +1,28 @@
+id: 10
+source: 1
+templatename: newsletterDetail
+properties: 'a:0:{}'
+
+-----
+
+<!doctype html>
+<html lang="es">
+
+<head>
+   [[$head]]
+   <title>[[*pagetitle]] | Secrets Unsealed</title>
+</head>
+
+<body>
+   <!-- Navbar -->
+   [[$header]]
+   <main>
+    [[!rederNewsletterDetail? &count=`5` &tpl=`newsletter-detail`]]
+   </main>
+
+ [[$footer]]
+ [[$scripts]]
+</body>
+
+
+</html>

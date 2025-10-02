@@ -1,0 +1,47 @@
+id: 9
+source: 1
+templatename: speakerDetailTemplate
+properties: 'a:0:{}'
+
+-----
+
+<!doctype html>
+<html lang="en">
+
+<head>
+   [[$head]]
+   <title>SUMtv Latino | Secrets Unsealed</title>
+</head>
+
+<body>
+   <!-- Navbar -->
+   [[$header]]
+   <main>
+    [[!SpeakerDetail? &json=`[[*content]]`]]
+   <section class="container my-5">
+            <div class="row">
+               <div class="col">
+                  <h2 class="text-primary">Watch some of his sermons</h2>
+               </div>
+            </div>
+            <div class="row">
+               <div class="row">
+               
+                  [[!getSermons?
+                  &lang=`es`
+                  &limit = `8`
+                  &strapiId=`[[*strapiId]]`
+                  &tpl =`card-featured`
+               
+                  ]]
+               
+               </div>
+            </div>
+         </section>
+   </main>
+    [[$footer]]
+    [[$scripts]]
+</body>
+
+
+</html>

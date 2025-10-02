@@ -1,0 +1,20 @@
+id: 61
+source: 1
+name: whatsOn
+description: ''
+properties: 'a:0:{}'
+
+-----
+
+[[!getWhatsOn? &tpl=`OnNowTpl` &lang=`en` &limit=`1`]]
+<section id="next" class="">
+         <div class="container-fluid">
+            <div class="row capitalize-first-letter text-dark">
+  [[!getWhatsOn? &tpl=`nextTpl` &lang=`en` &limit=`4`]]
+               <div
+                  class="col-12 col-sm-6 col-md-3 p-4 bg-primary-subtle d-flex justify-content-center align-content-center">
+                  <a href="[[~18]]" class="align-self-center btn btn-block btn-primary">Programación completa</a>
+               </div>
+            </div>
+         </div>
+      </section>

@@ -1,0 +1,104 @@
+id: 4
+source: 1
+templatename: homeTemplate
+properties: 'a:0:{}'
+
+-----
+
+<!doctype html>
+<html lang="en">
+
+<head>
+   [[$head]]
+   <title>SUMtv Latino | Secrets Unsealed</title>
+</head>
+
+<body>
+   <!-- Navbar -->
+   [[$header]]
+   <main>
+      <!--hero start-->
+      <div class="swiper swiper-amethyst-sly-moore-560">
+         <div class="swiper-wrapper">
+            <!-- Slides -->
+            
+           [[!slider? &tpl=`slide`]]
+          
+         </div>
+           <div class="swiper-pagination"></div>
+      </div>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+      <script>
+         var swiper = new Swiper(".swiper", {
+            grabCursor: true,
+            loop: true,
+            effect: "fade",
+            speed: 600,
+            pagination: { el: ".swiper-pagination" },
+            autoplay: { enabled: true, delay: 5000 },
+            keyboard: { enabled: true },
+            parallax: { enabled: true },
+            watchSlidesProgress: true,
+            observer: true,
+            observeParents: true,
+            slidesPerGroupAuto: false,
+         });
+      </script>
+      <!--hero end-->
+         [[$whatsOn]]
+         [[$latestPrograms]]
+         [[$resources]]
+         [[$updates]]
+         [[$appAd]]
+
+
+   </main>
+
+ [[$footer]]
+ [[$scripts]]
+  <div class="modal fade" tabindex="-1" id="iltkQuestion" aria-labelledby="preguntas"
+  aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Me Gustaria Saber</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="">
+                <!-- SUMtv forms -->
+<div id="c6">
+    Fill out my <a href="https://forms.sumtv.org/app/form?id=fQBIOw">online form</a>.
+</div>
+<script type="text/javascript">
+    (function(d, t) {
+        var s = d.createElement(t), options = {
+            'id': 'fQBIOw',
+            'theme': 0,
+            'container': 'c6',
+            'height': '651px',
+            'form': '//forms.sumtv.org/app/embed'
+        };
+        s.type= 'text/javascript';
+        s.src = '//forms.sumtv.org/static_files/js/form.widget.js';
+        s.onload = s.onreadystatechange = function() {
+            var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+            try { (new EasyForms()).initialize(options).display() } catch (e) { }
+        };
+        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+    })(document, 'script');
+</script>
+<!-- End SUMtv forms -->
+                          </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+
+
+</html>

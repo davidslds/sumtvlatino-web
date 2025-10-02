@@ -1,0 +1,34 @@
+id: 53
+source: 1
+name: speakersSection
+description: ''
+properties: 'a:0:{}'
+
+-----
+
+<section class="py-xl-9 py-5 bg-gray-200" id="speaker">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" data-cue="fadeIn">
+                <div class="mb-7 pb-2">
+                    <h2 class="mb-3">[[+heading]]</h2>
+                    <div class="mb-0 lead">[[+subheading]]</div>
+                </div>
+            </div>
+        </div>
+        [[+count:is=`1`:then=`
+      <div class="row justify-content-center">
+        [[+speakerCards]]
+      </div>
+    `:else=`
+      <div class="table-responsive-xl">
+        <div class="row row-cols-xl-5 row-cols-md-3 row-cols-1 g-4 flex-nowrap pb-4 pb-xl-0 me-9 me-lg-0 justify-content-lg-center" data-cues="fadeIn">
+          [[+speakerCards]]
+        </div>
+      </div>
+    `]]
+         
+
+        
+    </div>
+</section>

@@ -1,0 +1,162 @@
+id: 52
+source: 1
+name: event-detail
+description: ''
+properties: 'a:0:{}'
+
+-----
+
+  <!--Hero start-->
+         <div class="hero-eventpage">
+            <picture>
+               <source media="(max-width: 460px)" srcset="[[+imageMobile]]" class="img-fluid" />
+               <img src="[[+imageHero]]" alt="" alt="[[+eventType]]" class="responsive-hero-image" />
+            </picture>
+         </div>
+         <!--Hero end-->
+         <!--Location start-->
+         <section class="mb-xl-9" data-cue="fadeIn">
+            <div class="container">
+               <div class="row row border-top border-bottom">
+                  <div class="col-md-4 border-end-md border-bottom border-bottom-md-0">
+                     <div class="text-center p-5 px-xl-8 px-md-0" data-cue="zoomIn">
+                        <div class="icon-lg icon-shape rounded-circle bg-body-tertiary border mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                           </svg>
+                        </div>
+
+                        <h5>Lugar</h5>
+                        <p class="mb-0">[[+place]], [[+address]]</p>
+                        [[+hotelRegistration:notempty=`<a href="[[+hotelRegistration]]" class="btn btn-outline-primary btn-sm mt-3">Reservar hotel</a>`]]
+                     </div>
+                  </div>
+                  <div class="col-md-4 border-end-md border-bottom border-bottom-md-0">
+                     <div class="text-center p-5 px-xl-8 px-md-0" data-cue="zoomIn">
+                        <div class="icon-lg icon-shape rounded-circle bg-body-tertiary border mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window-dock" viewBox="0 0 16 16">
+                              <path
+                                 d="M3.5 11a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm4.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
+                              <path d="M14 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h12ZM2 14h12a1 1 0 0 0 1-1V5H1v8a1 1 0 0 0 1 1ZM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2Z" />
+                           </svg>
+                        </div>
+
+                        <h5>Fecha y Hora</h5>
+                        <p class="mb-0">[[+startDate:date=`%B %d`]] - [[+endDate:date=`%B %d, %Y`]]</p>
+                         [[+scheduleUrl:notempty=`<a href="[[+scheduleUrl]]" class="btn btn-outline-primary btn-sm mt-3">ver horario</a>`]]
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="text-center p-5 px-xl-8 px-md-0" data-cue="zoomIn">
+                        <div class="icon-lg icon-shape rounded-circle bg-body-tertiary border mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-detailed-fill" viewBox="0 0 16 16">
+                              <path
+                                 d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6V4.5Zm4 1a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5Zm0 5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5ZM4 8a1 1 0 0 0 1 1h6a1 1 0 1 0 0-2H5a1 1 0 0 0-1 1Z" />
+                           </svg>
+                        </div>
+
+                        <h5>Admisión</h5>
+                        <p class="mb-0">gratis</p>
+                       [[+registrationLink:notempty=`
+                        <a href="[[+registrationLink]]" class="mt-3 btn btn-outline-primary btn-sm">Registrarse</a>`]]
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--Location end-->
+         <section class="my-xl-9 my-5" data-cue="fadeIn">
+            <div class="container">
+               <div class="row align-items-center g-5">
+                  <div class="col-lg-6" data-cue="slideInLeft">
+                     <div class="mb-5">
+                        <p class="lead">[[+eventType]]</p>
+                        <h2 class="mb-3 fs-1 text-primary">[[+eventTitle]]</h2>
+                        <div class="lead mb-0">
+                           [[Markdown? &input=`[[+eventDesc]]`]]
+                           
+                        </div>
+                     </div>
+
+                     <a href="#pricing">
+                        registrarse
+                        <span class="ms-2">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                           </svg>
+                        </span>
+                     </a>
+                  </div>
+                  <div class="col-lg-6 justify-content-center" data-cue="slideInRight">
+                     <figure>
+                        <img src="[[+poster]]" alt="events" class="img-fluid rounded-3" />
+                     </figure>
+                  </div>
+               </div>
+               <div class="row mt-lg-5 mt-1 g-5" data-cue="fadeIn">
+                  <div class="col-lg-10 offset-lg-1">
+                     <div class="row g-5">
+                            [[+counters]]
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--Speakers start-->
+         [[+speakers]]
+         <!--Speakers end-->
+
+         <!-- Venue start -->
+         <section class="my-xl-9 my-5" data-cue="fadeIn">
+            <div class="container">
+               <div class="row align-items-center g-5">
+                  <div class="col-lg-6" data-cue="slideInLeft">
+                     <div class="mb-5">
+                        <h2 class="mb-3">Lugar</h2>
+                        <h2 class="mb-3 fs-1 text-primary">[[+place]]</h2>
+                        <p class="lead mb-0">Dirección: [[+address]]</p>
+                     </div>
+
+                     <a href="[[+hotelLink]]" class="m-2">
+                        registrarse
+                        <span class="ms-2">
+                           <i class="bi-arrow-right"></i>
+                        </span>
+                     </a>
+                  </div>
+                  <div class="col-lg-6" data-cue="slideInRight">
+                     <figure>
+                        <img src="[[+venueImage]]" alt="events" class="img-fluid rounded-3" />
+                     </figure>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Venue end -->
+
+         <!--Event tickets start-->
+      
+               [[+pricingSection]]
+         
+         <!--Event tickets end-->
+
+         <!-- Event Schedule start -->
+
+         [[+isSchedule:is=`yes`:then=`
+<section class="py-xl-9 py-5" data-cue="fadeIn">
+  <div class="container">
+   <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                     <div class="text-center mb-xl-9 mb-5">
+                        <h2 class="mb-3">Horario del Evento</h2>
+                        <p class="mb-0 lead px-xl-7"></p>
+                        <a href="[[+scheduleUrl]]" class="btn btn-outline-primary mt-3">ver horario en pdf</a>
+                     </div>
+                  </div>
+               </div>
+    [[+scheduleSection]]
+  </div>
+</section>
+`]]
+         <!-- Event schedyle end -->
+         [[+sections]]

@@ -1,0 +1,43 @@
+id: 63
+source: 1
+name: latestPrograms
+description: ''
+properties: 'a:0:{}'
+
+-----
+
+      <section id="latestPrograms" class="container" data-cue="zoomIn">
+         <div class="row pt-7">
+            <div class="col-lg-6 offset-lg-3">
+               <div class="text-center mb-xl-7 mb-5">
+                  <h2 class="h1 mb-3">Programas Recientes</h2>
+                  <!-- <p class="mb-0">At least, not exclusively. Reduced
+                        recruiting costs, more efficient and effective
+                        communication.</p> -->
+               </div>
+            </div>
+         </div>
+         <div class="row align-items-center g-5">
+            [[!getILTK? &tpl=`iltkTpl` &lang=`es` &limit=`1`]]
+         </div>
+         <div class="container">
+            <div class="row py-5 py-1 py-md-5">
+               <div id="ss" class="col-12 col-md-6 pt-3">
+                  <div class="row">
+                     <h4>SUMtv Escuela Sabática</h4>
+                  </div>
+                  <div class="row pt-3">
+                     [[!getSS? &tpl=`sabbathSchoolTpl` &lang=`es` &limit=`2`]]
+                  </div>
+               </div>
+               <div id="ws" class="col-12 col-md-6 pt-3">
+                  <div class="row">
+                     <h4>SUMtv Culto Divino</h4>
+                  </div>
+                  <div class="row pt-3">
+                    [[!getWs? &tpl=`worshipServiceTpl` &lang=`es` &limit=`2`]]
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>

@@ -1,0 +1,34 @@
+id: 15
+source: 1
+name: metaSeo
+description: ''
+category: Global
+properties: 'a:0:{}'
+
+-----
+
+<!-- Meta Description -->
+<meta name="description" content="[[*description]]">
+
+<!-- Keywords (optional, not used much by Google anymore) -->
+<meta name="keywords" content="TV Cristiana, Profecia Biblica, video cristianos, Programas Adventista, ministerio de salud, SUMtv latino, en vivo,  Secrets Unsealed, Pastor Esteban Bohr, Pastor Luis Fernando Manrique, Pastor David Salazar, Escuela Sabatica, Estudio Biblicos">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="[[~[[*id]]? &scheme=`http`]]" />
+
+<!-- Robots Instructions -->
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="[[*pagettitle]] - Secrets Unsealed" />
+<meta property="og:description" content="[[*description]]" />
+<meta property="og:url" content="[[~[[*id]]? &scheme=`http`]]" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://sumtvlatino.org/assets/img/sumtvlatino-og.jpg" />
+<meta property="og:site_name" content="[[++site_name]]" />
+
+<!-- Similar to the meta description tag in HTML. This description is shown below the link title on Facebook. -->
+<meta property="og:description" content="[[*description]]" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="[[*pagetitle]] - [[++site_name]]" />
+<meta name="twitter:description" content="[[*description]]" />
+<meta name="twitter:image" content="https://sumtvlatino.org/assets/img/sumtvlatino-og.jpg" />

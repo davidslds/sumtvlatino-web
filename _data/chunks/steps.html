@@ -1,0 +1,31 @@
+id: 35
+source: 1
+name: steps
+description: ''
+properties: 'a:0:{}'
+
+-----
+
+<div class="col-lg-4 col-md-6 col-12">
+                        <div class="p-xl-5">
+                           <div class="d-flex align-items-center justify-content-between mb-5">
+                              <div class="icon-xl icon-shape rounded-circle bg-primary border border-primary-subtle border-4 text-white-stable fw-semibold fs-3">[[+step_number]]</div>
+                              [[+arrow:ed='true': then= `
+                            <span>
+                                                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right text-body-tertiary" viewBox="0 0 16 16">
+                                                                <path
+                                                                   fill-rule="evenodd"
+                                                                   d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                                             </svg>
+                                                          </span>
+                                                          `]]
+                           </div>
+
+                           <h3 class="h4">[[+step_heading]]
+                           </h3>
+                           <div class="mb-0"> [[Markdown? &input=`[[+content]]`]]</div>
+                           <div>
+                              [[+buttons]]
+                           </div>
+                        </div>
+                     </div>

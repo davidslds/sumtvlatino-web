@@ -1,0 +1,5 @@
+context_key: mgr
+key: modRequest.class
+value: MODX\Revolution\modManagerRequest
+area: system
+editedon: null

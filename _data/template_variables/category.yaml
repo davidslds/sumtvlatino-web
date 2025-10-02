@@ -1,0 +1,11 @@
+id: 6
+source: 1
+type: tag
+name: category
+elements: 'Escuela de Teología Ancla ||Estudios Bíblicos y Doctrinas || Vida Cristiana || Estilo de Vida y Salud || Congresos'
+display: default
+default_text: ''
+properties: 'a:0:{}'
+input_properties: 'a:1:{s:10:"allowBlank";s:4:"true";}'
+output_properties: 'a:0:{}'
+content: ''

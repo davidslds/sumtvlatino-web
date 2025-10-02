@@ -1,0 +1,11 @@
+id: 3
+source: 1
+type: textarea
+name: sectionsJson
+elements: null
+display: default
+default_text: ''
+properties: 'a:0:{}'
+input_properties: 'a:4:{s:10:"allowBlank";s:4:"true";s:11:"inputHeight";s:3:"600";s:12:"textareaGrow";s:4:"true";s:17:"textareaResizable";s:4:"true";}'
+output_properties: 'a:0:{}'
+content: ''

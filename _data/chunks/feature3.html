@@ -1,0 +1,80 @@
+id: 24
+source: 1
+name: feature3
+description: ''
+properties: 'a:0:{}'
+
+-----
+
+  <!--Featured 3-->
+   [[+variant:eq=`image-right`:then=`
+   <section class="">
+            <div class="container py-5">
+               <div class="row align-items-center py-5 gy-5 gy-lg-0 bg-[[+color]] bg-opacity-10 rounded-4 text-dark text-opacity-75">
+                  <div class="col-xl-5 offset-xl-1 col-lg-6 col-12">
+                     <div class="d-flex flex-column gap-4">
+                        [[+pill_label:notempty=`
+                        <div>
+                           <span class="badge bg-[[+color]] bg-opacity-10 border border-[[+color]] text-[[+color]] rounded-pill py-2 px-3 text-uppercase ls-md">
+                             [[+pill_label]]
+                           </span>
+                        </div>
+                        `]]
+                        <div class="d-flex flex-column gap-2">
+                           <h3 class="mb-0 fs-2">[[+heading]]</h3>
+                           <div class="mb-0">
+                                [[Markdown? &input=`[[+bodyContent]]`]]
+                           </div>
+                        </div>
+                        
+                        <div>
+                           [[+buttons]]
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-5 col-lg-6 col-12">
+                     <div class="d-flex justify-content-center mt-6">
+                        <img src="[[+picture]]" alt="[[+heading]]" class="img-fluid" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+   `]]
+   [[+variant:eq=`image-left`:then=`
+   <section class="">
+            <div class="container py-5">
+               <div class="row align-items-center py-5 gy-5 gy-lg-0 bg-[[+color]] bg-opacity-10 rounded-4 text-dark text-opacity-75">
+                  <div class="col-xl-5 col-lg-6 col-12">
+                     <div class="d-flex justify-content-center mt-6">
+                        <img src="[[+picture]]" alt="[[+heading]]" class="img-fluid" />
+                     </div>
+                  </div>
+                  <div class="col-xl-5 offset-xl-1 col-lg-6 col-12">
+                     <div class="d-flex flex-column gap-4">
+                        [[+pill_label:notempty=`
+<div>
+   <span class="badge bg-[[+color]] bg-opacity-10 border border-[[+color]] text-[[+color]] rounded-pill py-2 px-3 text-uppercase ls-md">
+     [[+pill_label]]
+   </span>
+</div>
+`]]
+                        <div class="d-flex flex-column gap-2">
+                           <h3 class="mb-0 fs-2">[[+heading]]</h3>
+                           <div class="mb-0">
+                              [[Markdown? &input=`[[+bodyContent]]`]]
+                           </div>
+                        </div>
+                        
+                        <div>
+                           [[+buttons]]
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+         </section>
+   `]]
+         
+         <!--Featured 3 end-->

@@ -1,0 +1,51 @@
+id: 59
+source: 1
+name: newsletter-detail
+description: ''
+properties: 'a:0:{}'
+
+-----
+
+<section id="hero" class="pt-9 right-slant-shape-2 pt-5 mb-5" 
+    style="background-color:[[+bgColor]];">
+    <div class="container">
+       <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-md-5 col-12 order-2 order-md-1">
+             <div class="text-center text-lg-start mb-7 mb-lg-0" >
+                <div class="mb-4">
+                   <h1 id="hero-text"  class=" display-5" style="color: [[+heroText]];">
+                      [[+title]]
+                   </h1>
+                </div>
+                <div class="hero-subtext" style="color: [[+heroSubtext]];">
+                  [[+description:notempty=`
+                     [[Markdown? &input=`[[+description]]`]]
+                    `]]
+                   [[+pdfFile:notempty=`
+                    <a href="[[+pdfFile]]" id="pdf-download-button" target="_blank" data-resource="[[*pagetitle]]" class="btn btn-primary me-2">Abrir PDF</a>
+                    `]]
+                   
+                     [[+epubFile:notempty=`
+                    <a target="_blank" href="https://sumtv.app/study-notes/[[+idStrapi]]"  target="_blank"  class="btn btn-primary me-2">Leer Online</a>
+                    `]]
+                     [[+storeLink:notempty=`
+                     <a href="[[+storeLink]]" target="_blank" class="btn btn-primary me-2">Comprar</a>
+                    `]]
+                   
+                </div>
+             </div>
+          </div>
+          <div class=" col-md-5 col-12  mt-3 mt-md-3 order-1 order-md-2">
+             <div class="position-relative z-1 pt-lg-9" >
+                <div class="position-relative d-flex justify-content-center pb-3 pb-md-0">
+                   <img id="myImage"    src="[[+cover]]" class="rounded-4 " style="width: 100%; max-width: 437px;"/>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <section class="container py-3">
+
+ </section>
+ 

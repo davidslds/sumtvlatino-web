@@ -1,0 +1,39 @@
+id: 34
+source: 1
+name: steps-block
+description: ''
+properties: 'a:0:{}'
+
+-----
+
+        <!--steps-->
+         <section class="my-xl-7 py-5">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12">
+                     <div class="mb-xl-7 mb-5 text-center">
+                        <h2 class="mb-3">
+                           [[+heading]]
+                        </h2>
+                        <p class="mb-0">[[+subheading]]</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="table-responsive-xl">
+                  <div class="row flex-nowrap pb-4 pb-lg-0 me-5 me-lg-0 me-lg-0 justify-content-lg-center">
+                     [[+steps]]
+                    
+                  </div>
+               </div>
+              [[+button_text:notempty= `
+               <div class="row">
+                  <div class="col-lg-12">
+                     <div class="text-center my-5">
+                        <a href="[[+button_link]]" class="btn btn-outline-primary">[[+button_text]]</a>
+                     </div>
+                  </div>
+               </div>
+              `]]
+            </div>
+         </section>
+         <!--steps-->

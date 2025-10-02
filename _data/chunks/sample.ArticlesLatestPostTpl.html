@@ -1,0 +1,12 @@
+id: 1
+name: sample.ArticlesLatestPostTpl
+description: 'The tpl row for the latest post. Duplicate this to override it.'
+category: Articles
+properties: null
+
+-----
+
+<li>
+  <a href="[[~[[+id]]]]">[[+pagetitle]]</a>
+  [[+publishedon:notempty=`<br /> - [[+publishedon:strtotime:date=`%b %d, %Y`]]`]]
+</li>

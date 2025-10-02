@@ -1,0 +1,84 @@
+id: 156
+pagetitle: 'Manuales de Estudio'
+alias: manuales-de-estudio
+published: 1
+parent: 5
+isfolder: 1
+introtext: ''
+richtext: 0
+template: 5
+createdby: 1
+createdon: 1759183706
+publishedon: 1759183680
+publishedby: 1
+uri: manuales-de-estudio
+uri_override: 1
+properties: null
+tvs:
+    cover: ''
+    poster: ''
+    sectionsJson: ''
+    strapiId: ''
+    strapiModel: ''
+    videoPromo: ''
+
+-----
+
+<div class="container mt-5 pb-5">
+<div class="row mb-3 d-flex justify-content-end">
+    <label for="sortSelect" class="col-1 form-label">Ordenar:</label>
+    <div class="col-2">
+        <select id="sortSelect" class="form-select ">
+        <option value="id-desc">Recientes</option>
+        <option value="pagetitle-asc">A - Z</option>
+        <option value="pagetitle-desc">Z - A</option>
+    </select>
+    </div>
+</div>
+
+
+      <div class="row g-4">
+            [[!getResources?
+              &parents=`[[*id]]`
+              &tpl=`card-5`
+   
+               &includeTVs=`1`
+              &processTVs=`1`
+               &limit=`0`
+            &tvPrefix=`tv.`
+            &sortby=`[[!getSortField]]`
+             &sortdir=`[[!getSortDirection]]`
+           
+     
+             ]]
+      </div>
+    </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  
+    let sortSelect = document.getElementById('sortSelect');
+
+    if (sortSelect) {
+    
+
+        sortSelect.addEventListener('change', function() {
+           
+            let url = new URL(window.location.href);
+            url.searchParams.set('sort', this.value);
+            window.location.href = url.toString(); // Reload page with updated sort
+        });
+
+        let currentSort = new URL(window.location.href).searchParams.get('sort');
+        if (currentSort) {
+            sortSelect.value = currentSort;
+           
+        }
+    } else {
+        console.log("❌ Dropdown Not Found");
+    }
+});
+</script>
+
+
+    

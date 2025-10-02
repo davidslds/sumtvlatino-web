@@ -1,0 +1,30 @@
+id: 8
+source: 1
+templatename: eventDetailTpl
+properties: 'a:0:{}'
+
+-----
+
+<!doctype html>
+<html lang="en">
+
+<head>
+   [[$head]]
+   <title>SUMtv Latino | Secrets Unsealed</title>
+</head>
+
+<body>
+   <!-- Navbar -->
+   [[$header]]
+   <main>
+     
+    [[!RenderEventDetail? &tpl=`event-detail` &strapiId=[[*strapiId]]]]
+
+   </main>
+
+ [[$footer]]
+ [[$scripts]]
+</body>
+
+
+</html>

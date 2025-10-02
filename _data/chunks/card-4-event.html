@@ -1,0 +1,36 @@
+id: 51
+source: 1
+name: card-4-event
+description: ''
+properties: 'a:0:{}'
+
+-----
+
+<div class="col-md-6">
+          <div class="card shadow-sm h-100 border-0 card-lift overflow-hidden">
+             <div class="row h-100 g-0">
+                <a href="[[~[[+id]]]]" class="col-lg-5 col-md-12" style="
+                         background-image: url([[+tv.cover]]);
+                         background-size: cover;
+                         background-repeat: no-repeat;
+                         background-position: center;
+                         min-height: 13rem;
+                      "></a>
+                <div class="col-lg-7 col-md-12">
+                   <div class="card-body h-100 d-flex align-items-start flex-column  rounded-end-lg-3 rounded-bottom-3 rounded-top-0 rounded-start-lg-0  ">
+                      <div class="mb-5">
+                         <small class="text-uppercase fw-semibold ls-md">[[+tv.eventType]]</small>
+                         <h4 class="my-2"><a href="[[~[[+id]]]]" class="text-reset">[[+tv.eventType]] [[+tv.startDate:date=`%Y`]] <br>
+                          [[+pagetitle]]
+                         </a></h4>
+                         <small>[[+tv.startDate:date=`%B %d`]] - [[+tv.endDate:date=`%B %d, %Y`]] </small>
+                      </div>
+                      <div class="mt-auto">
+                        <small class="me-2"><a href="[[~[[+id]]]]" class="btn btn-primary"> more info</a></small>
+                        <!-- <small>Germany</small> -->
+                     </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>

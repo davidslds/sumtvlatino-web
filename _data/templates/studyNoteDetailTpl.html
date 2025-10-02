@@ -1,0 +1,28 @@
+id: 7
+source: 1
+templatename: studyNoteDetailTpl
+properties: 'a:0:{}'
+
+-----
+
+<!doctype html>
+<html lang="es">
+
+<head>
+   [[$head]]
+   <title>[[*pagetitle]] | Secrets Unsealed</title>
+</head>
+
+<body>
+   <!-- Navbar -->
+   [[$header]]
+   <main>
+    [[!rederStudyNoteDetail? &count=`5` &tpl=`study-note-detail`]]
+   </main>
+
+ [[$footer]]
+ [[$scripts]]
+</body>
+
+
+</html>

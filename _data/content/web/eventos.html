@@ -1,0 +1,49 @@
+id: 3
+pagetitle: Eventos
+alias: eventos
+published: 1
+isfolder: 1
+introtext: ''
+richtext: 0
+template: 5
+menuindex: 2
+createdby: 1
+createdon: 1757981667
+publishedon: 1757981640
+publishedby: 1
+uri: eventos/
+properties: null
+tvs:
+    cover: ''
+    poster: ''
+    sectionsJson: ''
+    strapiId: ''
+    strapiModel: ''
+    videoPromo: ''
+
+-----
+
+<div class="container mt-5 pb-5">
+      <div class="row g-4">
+            [[!getResources?
+              &parents=`78`
+              &tpl=`card-4-event`
+               &includeTVs=`1`
+              &processTVs=`1`
+               &limit=`1`
+            &tvPrefix=`tv.`
+     
+             ]]
+             [[!getResources?
+              &parents=`79`
+              &tpl=`card-4-event`
+               &includeTVs=`1`
+              &processTVs=`1`
+               &limit=`1`
+            &tvPrefix=`tv.`
+     
+             ]]
+      </div>
+      
+ 
+</div>

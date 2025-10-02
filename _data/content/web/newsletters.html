@@ -1,0 +1,44 @@
+id: 157
+pagetitle: Newsletters
+alias: newsletters
+published: 1
+parent: 5
+introtext: ''
+richtext: 0
+template: 5
+menuindex: 1
+createdby: 1
+createdon: 1759183770
+publishedon: 1759183740
+publishedby: 1
+uri: newsletters
+uri_override: 1
+properties: null
+tvs:
+    cover: ''
+    poster: ''
+    sectionsJson: ''
+    strapiId: ''
+    strapiModel: ''
+    videoPromo: ''
+
+-----
+
+
+<div class="container pb-5">
+  <div class="row g-5">
+    [[!getResources?
+    &parents=`[[*id]]`
+    &tpl=`card-6`
+    
+    &includeTVs=`1`
+    &processTVs=`1`
+    &limit=`0`
+    &tvPrefix=`tv.`
+    &sortbyTV=`quarter`
+    &sortdirTV:=`DESC`
+    &includeContent = `1`
+
+    ]]
+  </div>
+</div>

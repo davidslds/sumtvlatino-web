@@ -1,0 +1,30 @@
+id: 36
+source: 1
+name: speaker-detail
+description: ''
+properties: 'a:0:{}'
+
+-----
+
+<div class="container-fluid hero-1" style="background-image: url(https://sumtvlatino.org/assets/img/speaker-bg.png)">
+            <div class="container">
+               <div class="row hero-1-content">
+                  <div class="col-3 col-md-6 text-center">
+                     <h2 class="text-primary">[[+fullname]]</h2>
+                     <p class="">[[+title]] </p>
+                     <button class="btn btn-primary">invite</button>
+                  </div>
+                  <div class="col-9 col-md-6 hero-1-image">
+                     <img src="[[+picture_transp_url]]" class="" alt="fullname" />
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row mt-3">
+               <div class="col-12">
+                [[Markdown? &input=`[[+description]]`]]
+               </div>
+            </div>
+         </div>
+         

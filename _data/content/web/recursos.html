@@ -1,0 +1,69 @@
+id: 5
+pagetitle: Recursos
+longtitle: 'Manuales de Estudio y Recursos'
+alias: recursos
+published: 1
+isfolder: 1
+introtext: ''
+richtext: 0
+template: 5
+menuindex: 4
+createdby: 1
+createdon: 1757981716
+publishedon: 1757981700
+publishedby: 1
+uri: recursos/
+properties: null
+tvs:
+    cover: ''
+    poster: ''
+    sectionsJson: ''
+    strapiId: ''
+    strapiModel: ''
+    videoPromo: ''
+
+-----
+
+
+               <div class="py-5">
+      <section class="container mb-3">
+        <h2 class="mb-5">Manuales de Estudio</h2>
+        <div class="row g-3 ">
+          [[!getResources? 
+           &tpl=`card-5` 
+           &parents= `156`
+           &includeTVs=`1`
+           &processTVs=`1`
+           &tvPrefix=`tv.`
+           &lang=`en` 
+           &limit=`8`]]
+         </div>
+         <div class="row">
+          <div class="col mt-3">
+            <a href="[[~156]]" class="icon-link icon-link-hover">ver todos los manuales de estudio<i class="bi bi-arrow-right"></i></a>
+          </div>
+         </div>
+      </section>
+    </div>
+
+        <div class="bg-accent5-darker py-5">
+      <section class="container mb-3   ">
+        <h2 class="mb-5">Boletines informativos</h2>
+        <div class="row g-3">
+          [[!getResources? 
+           &tpl=`card-6` 
+           &parents= `157`
+           &includeTVs=`1`
+           &processTVs=`1`
+           &tvPrefix=`tv.`
+           &lang=`en` 
+           &limit=`6`]]
+   
+        </div>
+         <div class="row mt-3">
+          <div class="col">
+            <a href="[[~157]]" class="icon-link icon-link-hover">ver más <i class="bi bi-arrow-right"></i></a>
+          </div>
+         </div>
+      </section>
+    </div>
