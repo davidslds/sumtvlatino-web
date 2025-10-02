@@ -1,0 +1,77 @@
+data_directory: _data/
+backup_directory: _backup/
+data:
+    contexts:
+        class: modContext
+        primary: key
+    context_settings:
+        class: modContextSetting
+        primary:
+            - context_key
+            - key
+    template_variables:
+        class: modTemplateVar
+        primary: name
+    template_variables_access:
+        class: modTemplateVarTemplate
+        primary:
+            - tmplvarid
+            - templateid
+    content:
+        type: content
+        exclude_keys:
+            - editedby
+            - editedon
+        truncate_on_force:
+            - modTemplateVarResource
+    categories:
+        class: modCategory
+        primary: category
+        truncate_on_force:
+            - modCategoryClosure
+    templates:
+        class: modTemplate
+        primary: templatename
+        extension: .html
+    chunks:
+        class: modChunk
+        primary: name
+        extension: .html
+    snippets:
+        class: modSnippet
+        primary: name
+        extension: .php
+    plugins:
+        class: modPlugin
+        primary: name
+        extension: .php
+    plugin_events:
+        class: modPluginEvent
+        primary:
+            - pluginid
+            - event
+    events:
+        class: modEvent
+        primary: name
+packages:
+    modx.com:
+        service_url: 'https://rest.modx.com/extras/'
+        description: 'The official MODX transport provider for 3rd party components.'
+        packages:
+            - archivist-1.2.5-pl
+            - articles-2.0.0-pl
+            - collections-4.1.1-pl
+            - getpage-1.2.5-pl
+            - getresources-1.7.1-pl
+            - guzzle7-7.8.1-pl
+            - monaco-2.0.3-pl
+            - pdotools-3.0.2-pl
+            - simplesearch-3.1.0-pl
+            - taglister-1.1.7-pl
+            - tinymce-4.3.4-pl
+            - wayfinder-2.3.3-pl
+    modstore.pro:
+        service_url: 'http://modstore.pro/extras/'
+        username: davidslds.7@gmail.com
+        packages:
+            - markdown-1.3.1-pl
