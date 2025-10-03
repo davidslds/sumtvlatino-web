@@ -1,0 +1,14 @@
+manager/
+vendor/
+connectors/
+core/
+.modstore.pro.key
+assets/components/
+composer.json
+composer.lock
+config.core.php
+ht.access
+index.php
+scriptRT.php
+webhook_debug_log.txt
+webhook_debug_log_array.txt

@@ -101,14 +101,31 @@ properties: 'a:0:{}'
                 </li>
                 <a href="https://fundraise.givesmart.com/f/200v/n?vid=18k09d" class="btn btn-primary btn-sm">Donar</a>
             </ul>
-            <div class="mt-3 mt-lg-0 d-flex align-items-center">
-               
-               
-               <a href="https://sumtv.org/" class="btn btn-light btn-sm mx-2">English</a>
-               
-            </div>
+            <div class="mt-3 mt-lg-0 d-flex align-items-center flex-column flex-md-row">
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#search" class="btn btn-light btn-sm">
+                     <i class="bi bi-search me-2"></i>
+                     <span class="d-md-none">buscar</span>
+                  </button>
+                  <a href="https://sumtv.org/" class="btn btn-light mx-2 btn-sm">English</a>
+               </div>
             </div>
          </div>
       </div>
    </nav>
 </header>
+<div class="modal fade" id="search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Buscar en SUMtv Latino</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+          [[!SimpleSearchForm? &landing=`244`]]
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+         </div>
+      </div>
+   </div>
+</div>

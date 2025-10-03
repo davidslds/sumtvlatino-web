@@ -6,13 +6,11 @@ properties: 'a:0:{}'
 
 -----
 
-<form class="simplesearch-search-form" action="[[~[[+landing]]]]" method="[[+method]]">
-    <fieldset>
-        <label for="[[+searchIndex]]">[[%simplesearch.search? &namespace=`simplesearch` &topic=`default`]]</label>
+<form class=" d-flex" action="[[~[[+landing]]]]" method="[[+method]]">
 
-        <input type="text" name="[[+searchIndex]]" id="[[+searchIndex]]" value="[[+searchValue]]" />
-        <input type="hidden" name="id" value="[[+landing]]" />
+    <input class="form-control me-2" type="text" name="[[+searchIndex]]" id="[[+searchIndex]]" value="[[+searchValue]]" />
+    <input type="hidden" name="id" value="[[+landing]]" />
 
-        <input type="submit" value="[[%simplesearch.search? &namespace=`simplesearch` &topic=`default`]]" />
-    </fieldset>
+    <input class="btn btn-outline-primary" type="submit" value="[[%simplesearch.search? &namespace=`simplesearch` &topic=`default`]]" data-bs-toggle="modal" data-bs-target="#searchResult"/>
+
 </form>
